@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TicTacToe</title>
+  <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+  <div id="gameContainer">
+
+
+    <div id="titlePage" >
+      <h2 >Tic Tac Toe</h2>
+      <p>How many players?</p>
+      <button id="onePlayer">One Player</button>
+      <button id="twoPlayer">Two Player</button>
+    </div>
+
+    <div id="difficulty" style="display:none">
+      <h2>Choose your difficulty</h2>
+      <button class="difficultyButton" id="easy">I want a<br>chance</button>
+      <button class="difficultyButton" id="hard">I don't like<br>winning anyway</button>
+    </div>
+
+    <div id="gamePage" style="display:none">
+      <table>
+        <tr>
+          <td id="space1"></td>
+          <td id="space2"></td>
+          <td id="space3"></td>
+        </tr>
+        <tr>
+          <td id="space4"></td>
+          <td id="space5"></td>
+          <td id="space6"></td>
+        </tr>
+        <tr>
+          <td id="space7"></td>
+          <td id="space8"></td>
+          <td id="space9"></td>
+        </tr>
+      </table>
+
+      <div id="playerTurn">
+        <p></p>
+      </div>
+    </div>
+
+    <div id="endScreen" style="display:none">
+      <h2 id="endMessage"></h2>
+      <p>Play again?</p>
+      <button id="restart">New Game</button>
+    </div>
+  </div>
+
+  <div class="title" id="winRecord" style="display:none">
+    <h3 id="record">Wins:</h3>
+    <ul>
+      <li>Player 1: <span id="playerOneWins">0</span></li>
+      <li>Player 2: <span id="playerTwoWins">0</span></li>
+    </ul>
+  </div>
+
+  <ul>
+    <li class="turnFlag" id="xTurnFlag" style="display:none">X's turn.</li>
+    <li class="turnFlag" id="oTurnFlag" style="display:none">O's turn.</li>
+  </ul>
+
+
+</body>
+</html>
