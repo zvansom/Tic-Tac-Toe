@@ -196,22 +196,22 @@ $(document).ready(function() {
     // Switch the active player and switch which player's flag is displayed.
     if(currentPlayer == playerOne) {
       currentPlayer = playerTwo;
-      $('#xTurnFlag').css({'display': 'none'});
-      $('#oTurnFlag').css({'display': 'inline-block'});
-      $('#oTurnFlag').animate({
-        bottom: '5px'
-      }, 'slow');
+      // $('#xTurnFlag').css({'display': 'none'});
+      // $('#oTurnFlag').css({'display': 'inline-block'});
+      // $('#oTurnFlag').animate({
+      //   bottom: '5px'
+      // }, 'slow');
       if(singlePlayer) {
         // If one player game, tell the computer player to act.
         var timeoutID = setTimeout(computerPlayer, 500);
       }
     } else {
       currentPlayer = playerOne;
-      $('#xTurnFlag').css({'display': 'inline-block'});
-      $('#oTurnFlag').css({'display': 'none'});
-      $('#xTurnFlag').animate({
-        bottom: '5px'
-      }, 'slow');
+      // $('#xTurnFlag').css({'display': 'inline-block'});
+      // $('#oTurnFlag').css({'display': 'none'});
+      // $('#xTurnFlag').animate({
+      //   bottom: '5px'
+      // }, 'slow');
     }
   }
 

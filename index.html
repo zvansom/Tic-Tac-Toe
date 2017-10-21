@@ -11,7 +11,6 @@
 <body>
   <div id="gameContainer">
 
-
     <div id="titlePage" >
       <h2 >Tic Tac Toe</h2>
       <p>How many players?</p>
@@ -28,26 +27,26 @@
     <div id="gamePage" style="display:none">
       <table>
         <tr>
+          <td id="space0">X</td>
           <td id="space1"></td>
-          <td id="space2"></td>
-          <td id="space3"></td>
+          <td id="space2">O</td>
         </tr>
         <tr>
+          <td id="space3">O</td>
           <td id="space4"></td>
           <td id="space5"></td>
-          <td id="space6"></td>
         </tr>
         <tr>
-          <td id="space7"></td>
-          <td id="space8"></td>
-          <td id="space9"></td>
+          <td id="space6">O</td>
+          <td id="space7">X</td>
+          <td id="space8">X</td>
         </tr>
       </table>
 
-      <div id="playerTurn">
-        <p></p>
-      </div>
-    </div>
+    <ul>
+      <li class="turnFlag" id="xTurnFlag" style="display:none">X's turn.</li>
+      <li class="turnFlag" id="oTurnFlag" style="display:none">O's turn.</li>
+    </ul>
 
     <div id="endScreen" style="display:none">
       <h2 id="endMessage"></h2>
@@ -56,19 +55,13 @@
     </div>
   </div>
 
-  <div class="title" id="winRecord" style="display:none">
+  <div id="winRecord" style="display:none">
     <h3 id="record">Wins:</h3>
     <ul>
       <li>Player 1: <span id="playerOneWins">0</span></li>
       <li>Player 2: <span id="playerTwoWins">0</span></li>
     </ul>
   </div>
-
-  <ul>
-    <li class="turnFlag" id="xTurnFlag" style="display:none">X's turn.</li>
-    <li class="turnFlag" id="oTurnFlag" style="display:none">O's turn.</li>
-  </ul>
-
 
 </body>
 </html>
